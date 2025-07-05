@@ -190,19 +190,42 @@ body {
 
 .contenedor {
   display: flex;
-  align-items: center; 
-  gap: 20px; 
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   padding: 20px;
 }
 
-.contenedor img {
-  width: 50%; 
+.imagen-portada {
+  max-width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 10px; /* opcional */
 }
 
-.contenedor .texto {
-  max-width: 50%;
+.texto h2 {
+  margin-top: 20px;
+  font-size: 2rem;
 }
 
+.texto p {
+  max-width: 800px;
+  line-height: 1.5;
+  font-size: 1rem;
+}
 
+.iframe-responsive {
+  position: relative;
+  padding-bottom: 56.25%; /* Proporción 16:9 */
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.iframe-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
