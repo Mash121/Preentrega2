@@ -58,6 +58,13 @@ body {
     color: red;   
 }
 
+.nav-menu li a:hover {
+  background: rgba(255,255,255,0.2);  /* fondo semitransparente */
+  color: red;                       /* cambia color del texto */
+  border-radius: 4px;
+}
+
+
 
 
 .caja{
@@ -228,4 +235,56 @@ body {
   width: 100%;
   height: 100%;
   border: none;
+}
+
+.info-juego {
+  text-align: center;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: black; /* opcional */
+  border-radius: 10px;        /* opcional */
+  border-color: red;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* opcional */
+}
+
+.info-juego h2 {
+  color:#f4f4f4;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.info-juego p {
+  color: #f4f4f4;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+
+/* Centrado de los enlaces sociales */
+.social-container {
+  display: flex;               /* en fila */
+  justify-content: center;     /* centrados horizontalmente */
+  gap: 20px;                   /* espacio entre ellos */
+  margin: 20px 0;              /* margen arriba y abajo */
+}
+
+/* Estilo de cada enlace */
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: red;                  /* color rojo para texto y SVGs con fill="currentColor" */
+}
+
+/* Tamaño y color de los iconos */
+.icon-rojo {
+  color: red;                  /* aplica el color rojo al SVG */
+  width: 40px;                 /* ancho del icono */
+  height: 40px;                /* alto del icono */
+}
+
+.social-link:hover {
+  color: #ff6666;
 }
